@@ -7,17 +7,17 @@ class Logger {
    * info, debug, warn and error.
    * @param {string} module - eventlly module name
    */
-  constructor(module) {
+  constructor (module) {
     this.module = module
     this._logger = winston.createLogger({
       format: format.combine(
         format.timestamp(),
-        format.simple(),
+        format.simple()
       ),
       transports: ['error'].map((logFile) => new transports.File({
         filename: `${logFile}.log`,
-        level: logFile,
-      })),
+        level: logFile
+      }))
     })
 
     if (process.env.NODE_ENV !== 'production') {
@@ -25,29 +25,29 @@ class Logger {
         format: format.combine(
           format.timestamp({ format: 'YYYY-MM-DDTHH:mm:ssZ' }),
           format.colorize(),
-          format.simple(),
-        ),
+          format.simple()
+        )
       }))
     }
   }
 
-  info(message, ...args) {
+  info (message, ...args) {
     this._log('info', message, args)
   }
 
-  debug(message, ...args) {
+  debug (message, ...args) {
     this._log('debug', message, args)
   }
 
-  warn(message, ...args) {
+  warn (message, ...args) {
     this._log('warn', message, args)
   }
 
-  error(message, ...args) {
+  error (message, ...args) {
     this._log('error', message, args)
   }
 
-  _log(level, message, ...args) {
+  _log (level, message, ...args) {
     this._logger[level](`[@cvfy_${this.module}] --> ${message} | `, args)
   }
 }
