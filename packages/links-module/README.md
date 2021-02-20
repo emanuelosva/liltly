@@ -1,4 +1,4 @@
-# `@litly/links-module`
+# `@liltly/links-module`
 
 > TODO: description
 

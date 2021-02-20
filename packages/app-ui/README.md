@@ -1,11 +1,11 @@
-# `@litly/app-ui`
+# `@liltly/app-ui`
 
 > TODO: description
 
 ## Usage
 
 ```
-const appUi = require('@litly/app-ui');
+const appUi = require('@liltly/app-ui');
 
 // TODO: DEMONSTRATE API
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "litly",
+  "name": "liltly",
   "workspaces": [
     "packages/*"
   ],

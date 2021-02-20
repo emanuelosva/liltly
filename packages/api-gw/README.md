@@ -1,11 +1,11 @@
-# `@litly/api-gw`
+# `@liltly/api-gw`
 
 > TODO: description
 
 ## Usage
 
 ```
-const apiGw = require('@litly/api-gw');
+const apiGw = require('@liltly/api-gw');
 
 // TODO: DEMONSTRATE API
 ```

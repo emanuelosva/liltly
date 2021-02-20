@@ -1,11 +1,11 @@
-# `@litly/statistics-module`
+# `@liltly/statistics-module`
 
 > TODO: description
 
 ## Usage
 
 ```
-const statisticsModule = require('@litly/statistics-module');
+const statisticsModule = require('@liltly/statistics-module');
 
 // TODO: DEMONSTRATE API
 ```

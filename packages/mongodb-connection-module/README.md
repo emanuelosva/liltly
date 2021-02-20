@@ -1,11 +1,11 @@
-# `@litly/mongodb-connection-module`
+# `@liltly/mongodb-connection-module`
 
 > TODO: description
 
 ## Usage
 
 ```
-const mongodbConnectionModule = require('@litly/mongodb-connection-module');
+const mongodbConnectionModule = require('@liltly/mongodb-connection-module');
 
 // TODO: DEMONSTRATE API
 ```

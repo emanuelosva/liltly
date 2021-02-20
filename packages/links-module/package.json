@@ -1,5 +1,5 @@
 {
-  "name": "@litly/links-module",
+  "name": "@liltly/links-module",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emanuelosva/litly.git"
+    "url": "git+https://github.com/emanuelosva/liltly.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/emanuelosva/litly/issues"
+    "url": "https://github.com/emanuelosva/liltly/issues"
   },
-  "homepage": "https://github.com/emanuelosva/litly#readme"
+  "homepage": "https://github.com/emanuelosva/liltly#readme"
 }
