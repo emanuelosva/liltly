@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/emanuelosva/litly/issues"
   },
-  "homepage": "https://github.com/emanuelosva/litly#readme"
+  "homepage": "https://github.com/emanuelosva/litly#readme",
+  "dependencies": {
+    "@litly/common-module": "1.0.0",
+    "mongoose": "^5.11.16"
+  }
 }
