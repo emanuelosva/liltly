@@ -2,4 +2,11 @@
 node_modules
 
 # Env vars
-.env*
+.env
+
+# Logs
+*log
+
+# Test
+coverage
+package/**/coverage
