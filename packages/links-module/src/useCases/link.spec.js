@@ -11,11 +11,11 @@ describe('Link Use Cases', () => {
       const linkObjectModel = {
         _id: faker.random.uuid,
         originalUrl,
-        hash,
+        hash
       }
       const dependencies = {
-        model: { create: jest.fn(() => Promise.resolve(linkObjectModel))},
-        hashGenerator: jest.fn(() => hash),
+        model: { create: jest.fn(() => Promise.resolve(linkObjectModel)) },
+        hashGenerator: jest.fn(() => hash)
       }
 
       // Act
@@ -33,7 +33,7 @@ describe('Link Use Cases', () => {
       const fullHostNameURL = faker.internet.url()
       const dependencies = {
         model: { create: jest.fn() },
-        hashGenerator: jest.fn(() => ''),
+        hashGenerator: jest.fn(() => '')
       }
 
       // Act
@@ -50,7 +50,7 @@ describe('Link Use Cases', () => {
       const fullHostNameURL = faker.random.alpha()
       const dependencies = {
         model: { create: jest.fn() },
-        hashGenerator: jest.fn(() => ''),
+        hashGenerator: jest.fn(() => '')
       }
 
       // Act
@@ -68,7 +68,7 @@ describe('Link Use Cases', () => {
       const hash = faker.random.word()
       const urlObject = {
         _id: faker.random.uuid(),
-        originalUrl: faker.internet.url(),
+        originalUrl: faker.internet.url()
       }
       const dependencies = {
         model: {

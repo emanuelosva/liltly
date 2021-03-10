@@ -1,7 +1,10 @@
 const { makeLinkUseCases } = require('./useCases')
 const { LinkModel } = require('./entities')
-const { nanoId } 
+const { nanoid } = require('nanoid')
 
 module.exports = {
-  linkServices: makeLinkUseCases({ model: LinkModel, hashGenerator: })
+  linkService: makeLinkUseCases({
+    model: LinkModel,
+    hashGenerator: () => nanoid(10)
+  })
 }

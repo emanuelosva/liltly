@@ -7,7 +7,7 @@ const makeLinkUseCases = ({ model, hashGenerator }) => {
       logger.error(`Error on create link - invalid url: ${originalUrl} or hotname: ${fullHostNameURL}`)
       BussinesError.throwError(`Error on create link - invalid url: ${originalUrl} or hotname: ${fullHostNameURL}`, 400)
     }
-  
+
     let url
     try {
       url = await model.create({ originalUrl, hash: hashGenerator() })
@@ -16,8 +16,8 @@ const makeLinkUseCases = ({ model, hashGenerator }) => {
     }
     return `${fullHostNameURL}/${url.hash}`
   }
-  
-  const readUrlByHash = async (hash, select = { _id: 1, originalUrl: 1}) => {
+
+  const readUrlByHash = async (hash, select = { _id: 1, originalUrl: 1 }) => {
     if (!hash) BussinesError.throwError('The hash is required', 400)
 
     let link
@@ -32,7 +32,7 @@ const makeLinkUseCases = ({ model, hashGenerator }) => {
 
   return Object.freeze({
     createShortUrl,
-    readUrlByHash,
+    readUrlByHash
   })
 }
 
